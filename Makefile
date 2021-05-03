@@ -10,11 +10,11 @@ CXXFLAGS_DEBUG:=	-O0 \
 
 release:
 	$(CXX) UnoTransport.cpp server.cpp -o server $(CXXFLAGS_RELEASE)
-	$(CXX) UnoTransport.cpp server.cpp -o server $(CXXFLAGS_RELEASE)
+	$(CXX) UnoTransport.cpp client.cpp -o client $(CXXFLAGS_RELEASE)
 
 debug:
 	$(CXX) UnoTransport.cpp server.cpp -o server $(CXXFLAGS_DEBUG)
-	$(CXX) UnoTransport.cpp server.cpp -o server $(CXXFLAGS_DEBUG)
+	$(CXX) UnoTransport.cpp client.cpp -o client $(CXXFLAGS_DEBUG)
 
 clean:
 	@rm -rf server

@@ -12,7 +12,7 @@ The reason behind this name is I was writing a LAN multiplayer game of Uno and I
 
 ## DISCLAIMER
 
-I made this protocol as a learning exercise on how to design and implement a protocol. This protocol/implementation has several flaws and if you need a connection oriented protocol, you're better off just using TCP.
+I made this protocol as a learning exercise on how to design and implement a protocol. This protocol/implementation has several flaws and if you need a connection oriented protocol, you're better off just using TCP, or some tested and proven library (such as RakNet).
 I have used the linux specific timerfd feature. So this code is probably not very portable.
 
 ## How It works
